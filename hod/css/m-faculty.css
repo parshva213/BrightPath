@@ -1,0 +1,126 @@
+#manage {
+    display: none;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+#faculty {
+    top: 15vh;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    z-index: 100;
+    /* position: fixed; */
+    background-color: rgb(126,113,207);
+    width: 100%;
+    padding: 0.5vh 0;
+}
+
+.line1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh 5vw;
+}
+
+.redirect {
+    display: flex;
+    gap: 1vw;
+}
+
+.card:hover {
+    background-color: rgba(126, 113, 207, 1);
+    color: rgb(218,210,255);
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* ✅ Buttons Styling (Purple Color) */
+#buttons-container {
+    position: relative;
+    left: 5vw; /* Left side pe maintain */
+    transform: none;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2vh 0;
+}
+
+#buttons-container button:first-child {
+    margin-right: auto; /* "Add Faculty" left side pe chala jayega */
+}
+
+#buttons-container button {
+    padding: 12px 24px;
+    background-color: #786fe0; /* ✅ Purple color */
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 2vh;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+/* ✅ Online Forms Effect (Hover & Active States) */
+#buttons-container button:hover {
+    background-color: #695edb; /* Slightly darker purple */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#buttons-container button:active {
+    background-color: #5c53c6; /* Even darker purple for click effect */
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.3);
+} 
+
+/* ✅ Table Styles */
+#fac-tab {
+    border-spacing: 0;
+    /* margin-top: 10vh; */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#fac-tab .theader {
+    position: sticky;
+    top: 15vh; /* Adjust this value based on your header height */
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+#fac-tab th, #fac-tab td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 1vh;
+    font-size: 2.5vh;
+}
+
+#fac-tab th {
+    text-align: center;
+    font-size: 3vh;
+    background-color: #786fe0;
+    color: white;
+}
+
+/* Alternate Row Background */
+#fac-tab tr:nth-child(even) {
+    background-color: #dad2ff;
+}
+
+#fac-tab tr:nth-child(odd) {
+    background-color: #b3a5ff;
+}

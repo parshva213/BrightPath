@@ -1,0 +1,62 @@
+.main{
+    position: relative;
+    top: 30vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+/* update_faculty.css */
+.update-container {
+    width: 40vw;
+    /* margin: 50px auto; */
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #786fe0c8;
+}
+
+.update-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#updateFacultyForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#updateFacultyForm input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+#updateFacultyForm select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#updateFacultyForm button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #786fe080;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#updateFacultyForm button:hover {
+    background-color: #786fe0ff;
+}

@@ -1,0 +1,26 @@
+#course {
+    display: none;
+}
+
+.main {
+    top: 20vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 4vh 0;
+}
+
+input {
+    margin: 2vh auto;
+    padding: 1vh 2vw;
+    background-color: rgb(126, 113, 207);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: rgb(100, 90, 180);
+}

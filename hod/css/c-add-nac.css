@@ -1,0 +1,44 @@
+#course{
+    display: none;
+}
+.addcourse{
+    top: 20vh;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 2vh;
+    align-items: center;
+    font-size: 5vh;
+}
+#f2{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 25vw;
+    height: 55vh;
+    text-align: left;
+    background-color: rgb(218,210,255);
+    padding: 2vh 5vw;
+    border-radius: 5vh;
+}
+select{
+    font-size: 4vh;
+    height: 5vh;
+    /* border-radius: 5vh; */
+    padding: 0 2vw;
+}
+input{
+    height: 5vh;
+    border-radius: 5vh;
+    padding: 0 2vw;
+    font-size: 4vh;
+}
+
+#sub{
+    height: 5vh;
+    border-radius: 5vh;
+    font-size: 4vh;
+    width: 45%;
+}

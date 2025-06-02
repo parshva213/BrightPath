@@ -1,0 +1,158 @@
+#manage {
+    display: none;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.3);
+    font-family: Arial, sans-serif;
+}
+
+#student {
+    top: 15vh;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* 🔹 Header Styling */
+.header {
+    z-index: 100;
+    /* position: fixed; */
+    background-color: rgb(126, 113, 207);
+    width: 100%;
+    /* padding: 0.5vh 0; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Line Containers */
+.line1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5vw;
+}
+
+/* 🔹 Redirect Navigation */
+.redirect {
+    display: flex;
+    gap: 1vw;
+}
+
+/* 🔹 Card Hover Effect */
+.card:hover {
+    background-color: rgba(126, 113, 207, 1);
+    color: rgb(218, 210, 255);
+    text-decoration: underline;
+}
+
+/* 🔹 Table Styling */
+#stu-tab {
+    border-spacing: 0;
+    /* margin: 1vh 0 0 0; */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 🔹 Table Headers */
+#stu-tab th {
+    text-align: center;
+    padding: 1vh;
+    font-size: 3vh;
+    background-color: #786fe0;
+    color: white;
+    border-color: black;
+}
+
+#stu-tab .theader {
+    position: sticky;
+    top: 15vh; /* Adjust this value based on your header height */
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+/* 🔹 Table Cells */
+#stu-tab .s{
+    text-align: center;
+    padding: 1vh;
+    font-size: 2.5vh;
+    /* background-color: rgb(126, 113, 207); */
+    color: white;
+    border: 1px solid black;
+}
+#stu-tab td, 
+#stu-tab td a {
+    text-align: left;
+    padding: 1vh;
+    font-size: 2.5vh;
+}
+
+/* 🔹 Table Borders */
+#stu-tab th, td {
+    border: 1px solid black;
+    width: auto;
+}
+
+/* 🔹 Table Links */
+#stu-tab td a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 🔹 Alternate Row Background */
+#stu-tab tr:nth-child(even) {
+    background-color: #dad2ff;
+}
+
+#stu-tab tr:nth-child(odd) {
+    background-color: #b3a5ff;
+}
+
+/* ✅ Buttons Styling */
+#buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 20px; */
+    padding: 10px;
+}
+
+/* 🔹 New: Filter & Action Buttons */
+.filter-btn, .action-btn {
+    background-color: #7e71cf;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover, .action-btn:hover {
+    background-color: #5a4dab;
+}
+
+/* 🔹 Responsive Design */
+@media screen and (max-width: 768px) {
+    #stu-tab td, 
+    #stu-tab th {
+        font-size: 2vh;
+    }
+
+    .filter-btn, .action-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .line2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

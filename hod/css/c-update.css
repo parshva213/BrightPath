@@ -1,0 +1,52 @@
+#course {
+    display: none;
+}
+
+.main {
+    top: 20vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 4vh 0;
+}
+
+/* Styles copied from m-student.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2vh 0;
+}
+
+table th, table td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1vh;
+    text-align: center;
+}
+
+table th {
+    background-color: rgb(179, 165, 255);
+    color: rgb(0, 0, 0);
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(218, 210, 255);
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+}
+
+input {
+    margin: 2vh auto;
+    padding: 1vh 2vw;
+    background-color: rgb(126, 113, 207);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: rgb(100, 90, 180);
+}

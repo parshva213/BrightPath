@@ -1,0 +1,88 @@
+/* conform_student.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    flex-direction: column;
+    top: 15vh;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5vh;
+    margin-bottom: 2vh;
+    color: #333;
+}
+
+form {
+    width: 50vw;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 4vh 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+label {
+    font-weight: 600;
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 1.5vh;
+    font-size: 2.5vh;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+input[readonly] {
+    background-color: #eaeaea;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.main button {
+    flex: 1;
+    padding: 1.5vh;
+    font-size: 2.5vh;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.main button[type="button"] {
+    background-color: #777;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}

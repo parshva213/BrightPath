@@ -1,0 +1,60 @@
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #493d9e, #7e71cf, #b3a5ff, #dad2ff);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.spinner {
+    border: 6px solid #b3a5ff;
+    border-top: 6px solid #493d9e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #b3a5ff;
+    }
+    to {
+        text-shadow: 0 0 25px #dad2ff, 0 0 35px #7e71cf;
+    }
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

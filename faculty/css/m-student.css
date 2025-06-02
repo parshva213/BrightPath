@@ -1,0 +1,87 @@
+#manage{
+    display: none;
+}
+body {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+#student{
+    top: 15vh;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    z-index: 100;
+    position: fixed;
+    background-color: rgb(126,113,207);
+    width: 100%;
+    padding: 0.5vh 0;
+}
+.line1{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+.line2{
+    top: 23vh;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    
+}
+.redirect{
+    display: flex;
+    gap: 1vw;
+}
+.card:hover{
+    background-color: rgba(126, 113, 207, 1);
+    color: rgb(218,210,255);
+    text-decoration:  underline;
+}
+h2{
+    text-align: center;
+}
+
+
+/* General Table Styles */
+#stu-tab{
+    border-spacing: 0;
+    margin: 1vh 0 0 0;
+    width: 100%;
+    top: 7vh;
+    position: absolute;
+}
+#stu-tab td, td a {
+    text-align: left;
+    padding: 1vh;
+    font-size: 2.5vh;
+}
+
+#stu-tab th {
+    text-align: center;
+    padding: 1vh;
+    font-size: 3vh;
+    
+}
+/* Table Layout */
+#stu-tab th, td {
+    border: 1px solid black;
+    width: auto;
+}
+
+/* Links in Tables */
+#stu-tab td a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Alternate Row Background */
+#stu-tab tr:nth-child(even) {
+    background-color: #dad2ff;
+}
+#stu-tab tr:nth-child(odd) {
+    background-color: #b3a5ff ;
+}
+
+

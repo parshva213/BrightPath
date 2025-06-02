@@ -1,0 +1,66 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+h2 {
+    text-align: center;
+}
+
+form {
+    width: 50vw;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2vh 2vw;
+    gap: 1vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+label {
+    display: block;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 5vh;
+}
+
+input[type="submit"],
+button[type="submit"],
+button[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 4vh;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    padding: 1px;
+}
+
+button[type="button"] {
+    background-color: #777;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    opacity: 0.9;
+}
+
+p {
+    font-size: 1.1rem;
+}

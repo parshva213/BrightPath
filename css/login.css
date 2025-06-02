@@ -1,0 +1,213 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding-top: 10vh;
+}
+#validate{
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 4vh;
+}
+/*main*/
+#main {
+    padding: 2vh;
+    border-radius: 0.8vh;
+    box-shadow: 0 0 1vh rgba(178, 165, 255, 1);
+    width: auto;
+    padding: 5vh 2vw;
+    border-radius: 15vh;
+}
+
+/*logo*/
+#ins_logo{
+    font-size: 10vh;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    color: rgb(73,61,158);
+    
+}
+
+/*content*/
+#content{
+    display: flex;
+    flex-direction: column;
+}
+
+/*username*/
+#un{
+    margin: 1vh 0;
+    padding: 1vh 1vw;
+    justify-content: left;
+}
+
+/*username label*/
+.un1{
+    font-size: 5vh;
+    width: 100%;
+    height: 6vh; /* Updated height */
+    color: rgb(126, 113, 207);
+}
+
+/*username input*/
+.un2{
+    display: flex;
+    align-items: center; /*Align items vertically*/
+    box-shadow: 0 0 1vh rgba(178, 165, 255, 0.7);
+    position: relative;
+    width: 100%;
+    height: auto; /* Updated height */
+    transition: border 0.3s ease;
+    padding: 5px 0;
+    border-radius: 5vh;
+}
+
+
+.un2 input{
+    width: 100%;
+    display: block;
+    margin: 0;
+    height: 100%; /* Updated height */
+    border: none; /* Converted to vh */
+    outline: none;
+    font-size: 4vh;
+    transition: border 0.3s ease;
+    background: none;
+    color: rgb(178,165,255);
+    border-radius: 5vh;
+    padding:0 1vw;
+}
+
+
+
+/*password*/
+#pas{
+    margin: 1vh 0;
+    padding: 1vh 1vw;
+    justify-content: left;
+}
+
+/*password label*/
+#pas #pass1{
+    font-size: 5vh;
+    width: 100%;
+    height: 6vh; /* Updated height */
+    color: rgb(126, 113, 207);
+}
+
+/*password input*/
+#pas #pass2{
+    display: flex;
+    align-items: center; /* Align items vertically */
+    box-shadow: 0 0 1vh rgba(178, 165, 255, 0.7);
+    position: relative;
+    width: 100%;
+    height: auto; /* Updated height */
+    transition: border 0.3s ease;
+    padding: 5px 0;
+    border-radius: 5vh;
+}
+
+#pass2 input{
+    width: 100%;
+    margin: 0;
+    height: 100%; /* Updated height */
+    border: none; /* Converted to vh */
+    outline: none;
+    font-size: 4vh;
+    background: none;
+    color: rgb(178,165,255);
+    border-radius: 5vh;
+    padding: 0 1vw;
+}
+
+
+/*password button*/
+#pass2 button{
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 0.5vh;
+    height: 5vh;
+    width: auto;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#pass2:focus-within button{
+    visibility: visible;
+}
+
+/*password button img*/
+#pass2 button img{
+    height: 5vh;
+    width: auto;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+#pass2 button img:hover{
+    opacity: 1;
+}
+
+/*forgot password*/
+#fg{
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+}
+
+/*forgot password link*/
+#fg a{
+    color: rgb(126, 113, 207);
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out 1ms;
+}
+
+#fg a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/*login button*/
+#sub{
+    margin: 1vh 0;
+    padding: 1vh 1vw;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5vh;
+}
+
+#sub #log{
+    background-color: rgba(73,61,158,0.3);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5vh;
+}
+
+#sub #log:hover{
+    background-color: rgba(73,61,158,0.7);
+}
+
+#sub #log input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    border-radius: 5vh;
+}

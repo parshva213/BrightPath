@@ -1,0 +1,7 @@
+#course{
+    display: none;
+}
+.main{
+    position: absolute;
+    top: 20vh;
+}

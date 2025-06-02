@@ -1,0 +1,120 @@
+#manage{
+    display: none;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+#class {
+    top: 15vh;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    /* z-index: 100; */
+    position: relative;
+    background-color: rgb(126,113,207);
+    width: 100%;
+    padding: 0.5vh 0;
+}
+
+.line1 {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.line2 {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.redirect {
+    display: flex;
+    gap: 1vw;
+}
+
+.card:hover {
+    background-color: rgba(126, 113, 207, 1);
+    color: rgb(218, 210, 255);
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+}
+
+#class-tab {
+    width: 100%;
+    margin: 1vh 0 0 0;
+    padding: 0;
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0);
+    top: 7vh;
+    position: absolute;
+}
+
+#class-tab td {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.cd {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+}
+
+.cd td {
+    width: auto;
+}
+
+#class-tab tr:nth-child(even) {
+    background-color: rgb(218, 210, 255);
+}
+
+#class-tab tr:nth-child(odd) {
+    background-color: rgb(179, 165, 255);
+}
+
+.sd{
+    margin: auto;
+    width: auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+#class-tab .cd tr {
+    background: unset;
+}
+
+/* ✅ Update Button Styling */
+.update-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.update-container form {
+    display: inline-block;
+}
+
+.update-container input[type="submit"] {
+    background: #28a745;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.update-container input[type="submit"]:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
