@@ -1,6 +1,6 @@
 <?php
 
-header("Location: ../Brightpath/php/login.php");
+header("Location: ../php/login.php");
 exit();
 
 ?>
